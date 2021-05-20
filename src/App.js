@@ -1,7 +1,7 @@
 import React from "react";
-import JumboTron from "./components/JumboTron";
+import Header from "./components/Header";
 function App() {
-  return <JumboTron />;
+  return <Header />;
 }
 
 export default App;
