@@ -8,6 +8,8 @@ class App extends Component {
   state = {
     employees: [],
     search: "",
+    message: [],
+    error: "",
   };
   componentDidMount() {
     API.getUsers()
@@ -21,16 +23,16 @@ class App extends Component {
 
   handleFormSubmit = (event) => {
     event.preventDefault();
-    API.getUSer(this.state.search)
-      .then((res) => {
-        if (res.data.status === "error") {
-          throw new Error(res.data.results);
-        }
-        this.setState({ results: res.data.results, error: "" });
-      })
-      .catch((err) => this.setState({ error: err.message }));
-  };
+    console.log(this.state.search);
+    console.log(this.state.employees);
+    const employee = this.state.employees.filter(
+      (index) =>
+        index.name.first.toLowerCase() === this.state.search.toLowerCase()
+    );
+    console.log(employee);
 
+    this.setState({ employees: employee });
+  };
   render() {
     return (
       <div>
