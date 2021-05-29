@@ -13,6 +13,8 @@ The purpose for this app is so management can look thru their employees and keep
 
 ## Deployment
 
+https://jvemployee-directory.herokuapp.com/
+
 ## Usage
 
 management can use search bar to get quick access to employees
