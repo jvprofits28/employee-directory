@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/components/Header/style.css","webpack://src/components/SearchForm/style.css"],"names":[],"mappings":"AAAA,QACE,qBAAsB,CACtB,UAAY,CACZ,iBACF,CCJA,sBACE,aACF","file":"main.f040b5b7.chunk.css","sourcesContent":[".header {\n  background-color: blue;\n  color: white;\n  text-align: center;\n}\n","ul.search-results img {\n  margin: 0 auto;\n}\n"]}
